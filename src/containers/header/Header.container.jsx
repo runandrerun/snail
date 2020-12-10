@@ -1,9 +1,9 @@
 import React from 'react';
 import {Header} from '../../components';
-import logo from '../../_assets/img/snail.svg';
+import logo from '../../_assets/img/bottle.svg';
 import * as ROUTES from '../../constants/routes';
 
-export default function HeaderContainer() {
+export default function HeaderContainer({children}) {
   return (
     <Header>
       <Header.Logo
@@ -12,9 +12,10 @@ export default function HeaderContainer() {
       />
       <Header.ButtonsContainer>
         <Header.ButtonLink to={ROUTES.HOME}>Home</Header.ButtonLink>
-        <Header.Anchor href={ROUTES.GITHUB} rel="noopener noreferrer">Github Repo</Header.Anchor>
-        <Header.ButtonLink to={ROUTES.ABOUT}>About me</Header.ButtonLink>
+        <Header.Anchor href={ROUTES.GITHUB} rel="noopener noreferrer">Github</Header.Anchor>
+        <Header.ButtonLink to={ROUTES.ABOUT}>About</Header.ButtonLink>
       </Header.ButtonsContainer>
+      {children}
     </Header>
   );
 };
