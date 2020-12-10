@@ -1,12 +1,18 @@
 import React from 'react';
+import {OptFormContainer} from '../../containers';
 import {Hero} from '../../components';
 
 export default function HeroContainer() {
   return (
     <Hero>
-      <Hero.Headline>
-        msg in a bttl
-      </Hero.Headline>
+      <Hero.HeadlineWrap>
+        <Hero.Headline>
+          bottl.
+        </Hero.Headline>
+        <Hero.Subheadline>
+          penpals
+        </Hero.Subheadline>
+      </Hero.HeadlineWrap>
     </Hero>
   );
 };
