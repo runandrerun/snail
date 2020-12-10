@@ -20,42 +20,20 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
-  /* filter: brightness(0) invert(1); */
-  width: 50px;
-  height: 50px;
+  filter: brightness(0) invert(1);
+  width: 80px;
+  height: 80px;
   margin-right: 40px;
-  transform: rotate(0deg);
-  transition: all 1s ease-in;
+  transform: translateX(0px);
+  transition: all 0.5s ease-in;
 
   &:hover {
-    transform: rotate(360deg);
+    transform: translateX(1rem);
   }
 
   @media (min-width: 1449px) {
     width: 55px;
     height: 55px;
-  }
-`;
-
-export const Anchor = styled.a`
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #080808;
-  position: relative;
-  text-decoration: none;
-  &:after {
-    position: absolute;
-    left: 50%;
-    content: '';
-    height: 1px;
-    background: #080808;
-    transition: all 0.5s ease-in;
-    width: 0;
-    bottom: -1px;
-  }
-  &:hover:after {
-    width: 100%;
-    left: 0;
   }
 `;
 
@@ -65,21 +43,20 @@ export const ButtonsContainer = styled.div`
   &>:first-child, &>:nth-child(2) {
     margin-right: 1rem;
   }
-
 `;
 
-export const ButtonLink = styled(ReactRouterLink)`
-  font-size: 1.2rem;
+export const Anchor = styled.a`
+  font-size: 1.5rem;
   font-weight: 500;
-  color: #080808;
+  color: #ffffff;
   position: relative;
   text-decoration: none;
   &:after {
     position: absolute;
     left: 50%;
-  	content: '';
-  	height: 1px;
-    background: #080808;
+    content: '';
+    height: 1px;
+    background: #ffffff;
     transition: all 0.5s ease-in;
     width: 0;
     bottom: -1px;
@@ -87,5 +64,35 @@ export const ButtonLink = styled(ReactRouterLink)`
   &:hover:after {
     width: 100%;
     left: 0;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 1.2rem;
+  }
+`;
+
+export const ButtonLink = styled(ReactRouterLink)`
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  &:after {
+    position: absolute;
+    left: 50%;
+  	content: '';
+  	height: 1px;
+    background: #ffffff;
+    transition: all 0.5s ease-in;
+    width: 0;
+    bottom: -1px;
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 1.2rem;
   }
 `;
