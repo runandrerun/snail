@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Logo, Anchor, ButtonsContainer, ButtonLink} from './Header.styles';
+import {Container, LogoWrap, Logo, LogoText, Anchor, ButtonsContainer, ButtonLink} from './Header.styles';
 import {Link} from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
@@ -11,9 +11,10 @@ export default function Header({ children, ...restProps }) {
 
 Header.Logo = function HeaderLogo({ ...restProps }) {
   return (
-    <Link to={ROUTES.HOME}>
+    <LogoWrap to={ROUTES.HOME}>
       <Logo {...restProps} />
-    </Link>
+      <LogoText>bottl.</LogoText>
+    </LogoWrap>
   );
 };
 

@@ -23,17 +23,43 @@ export const Logo = styled.img`
   filter: brightness(0) invert(1);
   width: 80px;
   height: 80px;
-  margin-right: 40px;
+  margin-right: 1rem;
   transform: translateX(0px);
   transition: all 0.5s ease-in;
 
+  display: inline-block;
+  color: white;
   &:hover {
     transform: translateX(1rem);
   }
 
   @media (min-width: 1449px) {
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 45px;
+    height: 45px;
+  }
+`;
+
+export const LogoWrap = styled(ReactRouterLink)`
+  display: flex;
+  vertical-align: center;
+  text-decoration: none;
+`;
+
+export const LogoText = styled.div`
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  vertical-align: center;
+  margin: auto;
+
+  @media (max-width: 1000px) {
+    font-size: 1.5rem;
   }
 `;
 

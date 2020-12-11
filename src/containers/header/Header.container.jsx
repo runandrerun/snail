@@ -15,7 +15,6 @@ export default function HeaderContainer({children}) {
         <Header.Anchor href={ROUTES.GITHUB} rel="noopener noreferrer">Github</Header.Anchor>
         <Header.ButtonLink to={ROUTES.ABOUT}>About</Header.ButtonLink>
       </Header.ButtonsContainer>
-      {children}
     </Header>
   );
 };

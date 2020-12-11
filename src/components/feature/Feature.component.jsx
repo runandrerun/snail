@@ -1,9 +1,15 @@
 import React from 'react';
-import { Container, Title, Subtitle } from './Feature.styles';
+import { Container, HeadingsWrap, Title, Subtitle } from './Feature.styles';
 
 export default function Feature({ children, ...restProps }) {
   return (
     <Container {...restProps}>{children}</Container>
+  );
+};
+
+Feature.HeadingsWrap = function FeatureHeadingsWrap({ children, ...restProps }) {
+  return (
+    <HeadingsWrap {...restProps}>{children}</HeadingsWrap>
   );
 };
 
