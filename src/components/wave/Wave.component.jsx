@@ -4,6 +4,8 @@ import svg from '../../_assets/img/wave.svg';
 
 export default function Wave() {
   return (
-    <ImageBlock src={svg} />
-  )
-}
+    <ImageBlock>
+      <img src={svg} alt={"Wave"} />
+    </ImageBlock>
+  );
+};

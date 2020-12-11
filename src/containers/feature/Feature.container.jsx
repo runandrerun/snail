@@ -6,7 +6,7 @@ export default function FeatureContainer({children}) {
     <Feature>
       <Feature.HeadingsWrap>
       <Feature.Title>penpals.</Feature.Title>
-      <Feature.Subtitle>discover, write, and grow</Feature.Subtitle>
+      <Feature.Subtitle>discover, write, and grow.</Feature.Subtitle>
       </Feature.HeadingsWrap>
       {children}
     </Feature>
