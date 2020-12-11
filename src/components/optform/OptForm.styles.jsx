@@ -27,7 +27,11 @@ export const Input = styled.input`
   padding: .6rem;
   height: 50px;
   box-sizing: border-box;
-
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  &::placeholder {
+    font-size: 1rem;
+  }
   @media (max-width: 1000px) {
     width: 80%;
   }

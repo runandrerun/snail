@@ -2,6 +2,7 @@ import styled from 'styled-components/macro';
 
 export const Section = styled.section`
   display: flex;
+  flex-direction: column;
   padding: 1.5rem;
 
   @media (max-width: 1000px) {
