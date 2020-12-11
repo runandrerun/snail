@@ -4,12 +4,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  /* border-bottom: .5rem solid #222; */
-
   padding: 165px 45px;
 
   @media (max-width: 600px) {
-    padding: 150px 30px;
+    padding: 100px 30px;
   }
 `;
 
@@ -31,15 +29,37 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h2`
+  position: relative;
+  overflow: hidden;
   font-family: 'Roboto', serif;
   color: white;
   max-width: 640px;
   font-size: 3.5rem;
   font-weight: 500;
-  /* margin: 1rem auto; */
+  margin: 1rem auto;
   line-height: normal;
 
   @media (max-width: 600px) {
     font-size: 3rem;
+  }
+
+  span {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    width: 100%;
+    background: #aec6cf;
+    animation: showHide 10s ease-in-out;
+
+    @keyframes showHide {
+     0% {width: 100%; opacity: 1;}
+     40% {width: 0%; opacity: 1;}
+     60% {width: 0%; opacity: 1;}
+     90% {width: 0%; opacity: 0;}
+     100% {width: 0%; opacity: 0;}
+   }
   }
 `;

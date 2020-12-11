@@ -33,10 +33,10 @@ export const Logo = styled.img`
     transform: translateX(1rem);
   }
 
-  @media (min-width: 1449px) {
+  /* @media (min-width: 1449px) {
     width: 40px;
     height: 40px;
-  }
+  } */
 
   @media (max-width: 1000px) {
     width: 45px;

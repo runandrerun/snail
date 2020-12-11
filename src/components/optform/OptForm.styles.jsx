@@ -34,6 +34,7 @@ export const Input = styled.input`
   }
   @media (max-width: 1000px) {
     width: 80%;
+    border-radius: 5px;
   }
 `;
 

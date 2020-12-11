@@ -21,6 +21,9 @@ Feature.Title = function FeatureTitle({ children, ...restProps }) {
 
 Feature.Subtitle = function FeatureSubtitle({ children, ...restProps }) {
   return (
-    <Subtitle {...restProps}>{children}</Subtitle>
+    <Subtitle {...restProps}>
+      {children}
+      <span></span>
+    </Subtitle>
   );
 };
