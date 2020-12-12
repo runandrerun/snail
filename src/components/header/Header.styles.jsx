@@ -94,6 +94,7 @@ export const Anchor = styled.a`
 
   @media (max-width: 1000px) {
     font-size: 1.2rem;
+    display: none !important;
   }
 `;
 
@@ -120,5 +121,14 @@ export const ButtonLink = styled(ReactRouterLink)`
 
   @media (max-width: 1000px) {
     font-size: 1.2rem;
+    display: none !important;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  display: none;
+  background-image: require('../../_assets/img/waves-menu.svg');
+  @media (max-width: 1000px) {
+    display: block !important;
   }
 `;

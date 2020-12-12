@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 165px 45px;
+  padding: 150px 45px;
 
   @media (max-width: 600px) {
     padding: 100px 30px;

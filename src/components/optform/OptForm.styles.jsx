@@ -32,6 +32,11 @@ export const Input = styled.input`
   &::placeholder {
     font-size: 1rem;
   }
+  &:focus {
+    outline: none !important;
+    border: 1px solid #4F7C8C;
+    box-shadow: 0 0 10px #4F7C8C;
+  }
   @media (max-width: 1000px) {
     width: 80%;
     border-radius: 5px;
