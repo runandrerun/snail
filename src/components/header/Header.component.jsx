@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, LogoWrap, Logo, LogoText, Anchor, ButtonsContainer, ButtonLink} from './Header.styles';
+import {Container, LogoWrap, Logo, LogoText, Anchor, ButtonsContainer, ButtonLink, MobileMenu} from './Header.styles';
 import {Link} from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
@@ -33,5 +33,11 @@ Header.ButtonsContainer = function HeaderButtonsContainer({ children, ...restPro
 Header.Anchor = function HeaderAnchor({ children, ...restProps }) {
   return (
     <Anchor {...restProps}>{children}</Anchor>
+  );
+};
+
+Header.MobileMenu = function MobileMenu({ children, ...restProps }) {
+  return (
+    <MobileMenu {...restProps}>{children}</MobileMenu>
   );
 };
