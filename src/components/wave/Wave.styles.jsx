@@ -7,12 +7,12 @@ export const ImageBlock = styled.div`
   img {
     position: absolute;
     bottom: -2px;
-    width: 120%;
+    width: 100%;
     transform: translateX(0);
     animation: ebbAndFlow 10s infinite ease-in-out;
     transition: all 3s ease;
 
-    @keyframes ebbAndFlow {
+    /* @keyframes ebbAndFlow {
       0% {
         transform: translateX(0);
       }
@@ -22,6 +22,6 @@ export const ImageBlock = styled.div`
       100% {
         transform: translateX(0);
       }
-    }
+    } */
   }
 `;

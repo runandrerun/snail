@@ -36,7 +36,7 @@ export const ImageBlock = styled.div`
     height: auto;
 
     @media (max-width: 1000px) {
-      max-width: 400px;
+      max-width: 300px;
     }
   }
 `;
